@@ -15,8 +15,14 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         case 'proyectos':
             include 'templates/webpages/proyectos.html';
             break;
-        case 'contacto':
-            include 'contacto.php';
+        case 'biografia':
+            include 'templates/webpages/biografia.html';
+            break;
+        case 'noticias':
+            include 'templates/webpages/noticias.html';
+            break;
+        case 'contactos':
+            include 'templates/webpages/contactos.html';
             break;
         // Agregar más casos según las páginas que tengas
         default:
