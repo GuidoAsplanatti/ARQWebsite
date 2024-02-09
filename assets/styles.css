@@ -26,3 +26,10 @@ body {
     filter: brightness(80%);
 }
 
+.galeria-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; /* Espacio entre las imágenes */
+  }
+  
+
