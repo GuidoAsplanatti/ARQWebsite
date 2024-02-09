@@ -1,3 +1,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-transparent:hover {
+    filter: brightness(80%);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container:hover img {
+    filter: brightness(80%);
+}
+

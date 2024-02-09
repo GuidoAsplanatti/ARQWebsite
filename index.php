@@ -1,4 +1,9 @@
-<?php include('templates/head.html'); ?>
+<head>
+    <?php include('templates/head.html'); ?>
+    <?php include('assets/assets.html'); ?>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
 
 <?php
 // Definir una variable para la página actual
@@ -24,6 +29,11 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         case 'contactos':
             include 'templates/webpages/contactos.html';
             break;
+
+        //Obras
+        case 'Casa_Herzog':
+            include 'templates/workspages/Casa_Herzog.html';
+            break;
         // Agregar más casos según las páginas que tengas
         default:
             include 'home.php'; // Página predeterminada
@@ -33,5 +43,4 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 </body>
 
 <?php include('templates/footer.html'); ?>
-
 <?php include('assets/assets.html'); ?>
