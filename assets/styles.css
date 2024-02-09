@@ -58,3 +58,26 @@ body {
     margin-bottom: 30px; /* Espacio entre las imágenes */
   }
 
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+    background-color: #d6d6d6; /* Color de fondo */
+    border-radius: 8px; /* Redondear los bordes */
+  }
+  
+  /* Estilos para el control deslizante */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del control deslizante */
+    border-radius: 8px; /* Redondear los bordes */
+  }
+  
+  /* Estilos cuando se pasa el mouse sobre el control deslizante */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Color del control deslizante al pasar el mouse */
+  }
+  
+  /* Estilos para la barra de desplazamiento de la esquina inferior derecha (si es visible) */
+  ::-webkit-scrollbar-corner {
+    background-color: #333; /* Color de fondo */
+  }
+  
