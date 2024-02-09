@@ -2,6 +2,32 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* HEAD POSICION */
+.head-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; /* Cambia esto al color de fondo de tu head */
+    z-index: 1000; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
+}
+
+.navegation-container{
+    position: fixed;
+    top: 6.625rem;
+    width: 100%;
+    background-color: #ffffff; /* Cambia esto al color de fondo de tu head */
+    z-index: 1000; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
+}
+
+/* padding barras de navegaciones */
+.content {
+    padding-top: 7.8rem; /* Ajusta el padding superior según la altura de tu head */
+}
+
+.content-padding-top-secondary {
+    padding-top: 4.1675rem; /* Ajusta el padding superior según la altura de tu head */
+}
+
 .btn-transparent {
     background-color: transparent;
     border: none;
@@ -31,5 +57,4 @@ body {
     height: auto;
     margin-bottom: 30px; /* Espacio entre las imágenes */
   }
-  
 
