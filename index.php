@@ -1,7 +1,10 @@
 <head>
-    <?php include('templates/head.html'); ?>
-    <?php include('assets/assets.html'); ?>
+    <?php 
+        include('templates/head.html');
+        include('assets/assets.html'); ?>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
 </head>
 
 
@@ -9,7 +12,6 @@
 // Definir una variable para la página actual
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 ?>
-
 <body>
     <?php
     // Cargar el contenido de la página correspondiente
@@ -42,5 +44,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     ?>
 </body>
 
-<?php include('templates/footer.html'); ?>
-<?php include('assets/assets.html'); ?>
+<?php 
+    include('templates/footer.html');
+    include('assets/assets.html'); 
+?>
