@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Fernández Cabrera</title>
     <link rel="icon" href="ARQWebsite/contents/Logo_ARQFernandez.png" type="image/x-icon">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=ApoYMlspwO6CAraKKDGz3BnLGxZzp3_TAJwB2dzrbj_4OjvffvMH6vY7f05i4jCl'></script>
+
 </head>
 
-<body class="content">
+<body class="content" onload="onLoadMap()">
 
     <div class="container">
         <div id="carouselObrasDestacadas" class="carousel slide carousel-fade mx-auto">
@@ -149,9 +151,21 @@
   </div>
   
 
-  <div id="map"></div>
+  <!-- <div class="container" id="map" style="max-width: 1000px"></div>
     <script src="assets/script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC81NL2nCe-fiE8_EMovHkXL3UC_UwhShA&callback=iniciarMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC81NL2nCe-fiE8_EMovHkXL3UC_UwhShA&callback=iniciarMap"></script> -->
+
+  <div class="container" id="mapContainer" style="max-width: 1000px; height: 400px;"></div>
+  <script>
+    function onLoadMap() {
+        var map = new Microsoft.Maps.Map(document.getElementById('mapContainer'), {
+            credentials: 'ApoYMlspwO6CAraKKDGz3BnLGxZzp3_TAJwB2dzrbj_4OjvffvMH6vY7f05i4jCl',
+            center: new Microsoft.Maps.Location(-31,391439, -58,017474), // Latitud y longitud de la ubicación
+            zoom: 10 // Nivel de zoom inicial
+        });
+    }
+</script>
+
     
     
 </body>
