@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+    <head>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=ApoYMlspwO6CAraKKDGz3BnLGxZzp3_TAJwB2dzrbj_4OjvffvMH6vY7f05i4jCl'></script>
+    </head>
+<body onload="onLoadMap()">
 
     <!-- Tarjeta Contacto -->
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary mx-auto" style="max-width: 900px;">
@@ -41,6 +44,16 @@
         </div>
     </div>
 
+    <div class="container" id="mapContainer" style="max-width: 1000px; height: 400px;"></div>
+    <script>
+    function onLoadMap() {
+        var map = new Microsoft.Maps.Map(document.getElementById('mapContainer'), {
+            credentials: 'ApoYMlspwO6CAraKKDGz3BnLGxZzp3_TAJwB2dzrbj_4OjvffvMH6vY7f05i4jCl',
+            center: new Microsoft.Maps.Location(-31,391439, -58,017474), // Latitud y longitud de la ubicación
+            zoom: 10 // Nivel de zoom inicial
+        });
+    }
+    </script>
     <!-- JS BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
