@@ -21,11 +21,7 @@ body {
 
 /* padding barras de navegaciones */
 .content {
-    padding-top: 7.8rem; /* Ajusta el padding superior según la altura de tu head */
-}
-
-.content-padding-top-secondary {
-    padding-top: 4.1675rem; /* Ajusta el padding superior según la altura de tu head */
+    padding-top: 7rem; /* Ajusta el padding superior según la altura de tu head */
 }
 
 .btn-transparent {
@@ -81,5 +77,3 @@ body {
     background-color: #333; /* Color de fondo */
   }
   
-
-  /* Estilos para el botón "Ver obra" */
