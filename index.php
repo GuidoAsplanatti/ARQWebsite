@@ -1,6 +1,6 @@
 <head>
     <?php 
-        include('templates/head.html');
+        include('templates/head2.php');
         include('assets/assets.html'); ?>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
