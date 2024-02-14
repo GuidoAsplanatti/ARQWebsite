@@ -48,3 +48,5 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     include('templates/footer.html');
     include('assets/assets.html'); 
 ?>
+
+<!-- cormio herzog affranchino la merce -->

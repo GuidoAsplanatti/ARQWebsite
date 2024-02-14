@@ -12,6 +12,10 @@ $pages = array(
 );
 ?>
 
+<head>
+  <link rel="icon" href="assets/ARQLogoPestania.ico" type="image/x-icon" />
+</head>
+
 <header class="head-container">
   <div class="container">
       <div class="d-flex flex-wrap justify-content-center py-4">
