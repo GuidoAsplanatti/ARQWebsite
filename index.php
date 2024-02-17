@@ -1,9 +1,11 @@
 <head>
     <?php 
-        include('templates/head2.php');
+        include('templates/head.php');
         include('assets/assets.html'); ?>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    
+    <!-- Logo -->
     <link rel="icon" href="contents/brand_and_logo/ARQLogoPestania.ico" type="image/x-icon">
 </head>
 
@@ -45,7 +47,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 </body>
 
 <?php 
-    include('templates/footer.html');
+    include('templates/footer.php');
     include('assets/assets.html'); 
 ?>
 

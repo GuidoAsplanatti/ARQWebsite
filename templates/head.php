@@ -22,7 +22,7 @@ $pages = array(
         <ul class="nav nav-underline nav-scroller mb-3">
           <?php foreach ($pages as $page => $label): ?>
             <li class="nav-item">
-              <a href="index.php?page=<?php echo $page; ?>" class="nav-link link-body-emphasis <?php echo ($current_page == $page) ? 'active' : ''; ?>"><?php echo $label; ?></a>
+              <a href="index.php?page=<?php echo $page; ?>" class="nav-link link-body-emphasis <?php echo ($current_page == $page) ? 'active' : ''; ?>" style="font-weight: normal !important;"><?php echo $label; ?></a>
             </li>
           <?php endforeach; ?>
         </ul>

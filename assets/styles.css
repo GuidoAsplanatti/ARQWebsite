@@ -2,9 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.nav-link.link-body-emphasis.active {
-  font-weight: normal !important;
-}
+
 
 /* HEAD POSICION */
 .head-container {
@@ -26,10 +24,6 @@ body {
 /* padding barras de navegaciones */
 .content {
     padding-top: 7rem; /* Ajusta el padding superior según la altura de tu head */
-}
-
-.nav-link.link-body-emphasis.active {
-  font-weight: normal !important;
 }
 
 .btn-transparent {

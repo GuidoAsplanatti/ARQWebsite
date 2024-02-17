@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php include('templates/head.php'); ?>
+
 <div class="container">
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-3 border-bottom">
 
@@ -20,11 +22,11 @@
     <div class="col mb-3">
       <h6>NAVEGAR</h6>
       <ul class="nav nav-scroller flex-column">
-        <li class="nav-item mb-2"><a href="index.php?page=home" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-        <li class="nav-item mb-2"><a href="index.php?page=proyectos" class="nav-link p-0 text-body-secondary">Proyectos</a></li>
-        <li class="nav-item mb-2"><a href="index.php?page=biografia" class="nav-link p-0 text-body-secondary">Biografia</a></li>
-        <li class="nav-item mb-2"><a href="index.php?page=noticias" class="nav-link p-0 text-body-secondary">Noticias</a></li>
-        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">Contactos</a></li>
+        <?php foreach ($pages as $page => $label): ?>
+          <li class="nav-item mb-2">
+            <a href="index.php?page=<?php echo $page; ?>" class="nav-link p-0 text-body-secondary"><?php echo $label; ?></a>
+          </li>
+        <?php endforeach; ?>
       </ul>
     </div>
 
@@ -32,10 +34,11 @@
     <div class="col mb-3">
       <h6>CONTACTO</h6>
       <ul class="nav flex-column">
-        <li class="nav-item"><a href="#" class="nav-link p-0 text-body-secondary">Entre Ríos 946</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">3200 Concordia, Entre Ríos</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">+54 9 345 000 0000</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">gmail.com</a></li>
+
+        <li class="nav-item"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">Entre Ríos 946</a></li>
+        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">3200 Concordia, Entre Ríos</a></li>
+        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">+54 9 345 626 2695</a></li>
+        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">arqcarlosfernandezcabrera@gmail.com</a></li>
       </ul>
     </div>
 
