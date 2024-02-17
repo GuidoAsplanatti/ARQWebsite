@@ -47,7 +47,10 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 </body>
 
 <?php 
-    include('templates/footer.php');
+    if ($current_page !== 'home') {
+        include('templates/footer.php');
+    }
+
     include('assets/assets.html'); 
 ?>
 

@@ -24,7 +24,7 @@
       <ul class="nav nav-scroller flex-column">
         <?php foreach ($pages as $page => $label): ?>
           <li class="nav-item mb-2">
-            <a href="index.php?page=<?php echo $page; ?>" class="nav-link p-0 text-body-secondary"><?php echo $label; ?></a>
+            <a href="index.php?page=<?php echo $page; ?>" class="nav-link p-0 text-body-secondary"><?php echo ucfirst(strtolower($label)); ?></a>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -38,7 +38,8 @@
         <li class="nav-item"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">Entre Ríos 946</a></li>
         <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">3200 Concordia, Entre Ríos</a></li>
         <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">+54 9 345 626 2695</a></li>
-        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">arqcarlosfernandezcabrera@gmail.com</a></li>
+        <li class="nav-item"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">arqcarlosfernandezcabrera</a></li>
+        <li class="nav-item mb-2"><a href="index.php?page=contactos" class="nav-link p-0 text-body-secondary">@gmail.com</a></li>
       </ul>
     </div>
 
@@ -64,7 +65,7 @@
 
   <!-- Programador Contacto -->
   <div class="d-flex flex-column flex-sm-row justify-content-between">
-      <p>&copy; 3D Models and Developed by Guido Asplanatti, All rights reserved.</p>
+      <p>&copy; 3D Render and Developed by Guido Asplanatti, All rights reserved.</p>
       <ul class="list-unstyled d-flex">
 
         <li class="ms-3"><a class="link-body-emphasis" href="https://www.behance.net/guidoasp">
