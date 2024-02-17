@@ -4,7 +4,7 @@
         include('assets/assets.html'); ?>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-
+    <link rel="icon" href="contents/brand_and_logo/ARQLogoPestania.ico" type="image/x-icon">
 </head>
 
 
