@@ -9,7 +9,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffffff; /* Cambia esto al color de fondo de tu head */
+    background-color: #ffffff00; /* Cambia esto al color de fondo de tu head */
     z-index: 1000; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
 }
 
