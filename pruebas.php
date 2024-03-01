@@ -20,66 +20,53 @@
     <!-- Logo -->
     <link rel="icon" href="contents/brand_and_logo/ARQLogoPestania.ico" type="image/x-icon">
 
-    <!-- <?php include('templates/head.php'); ?> -->
+    <?php include('templates/head.php'); ?>
 
 
 </head>
 
 <header class="head-container">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container container-fluid">
+  <div class="container">
 
-      <!-- Logo -->
-      <a href="index.php?page=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img src="contents/Logo_ARQFernandez.png" class="img-fluid" alt="ARQ Carlos Fernanez Cabrera">
-      </a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid py-4">
 
-      <!-- Boton -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Logo -->
+        <a href="index.php?page=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="contents/Logo_ARQFernandez.png" class="img-fluid" alt="ARQ Carlos Fernanez Cabrera">
+        </a>
 
-      <!-- Contenido de la lista -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Boton -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Contenido de la lista -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+          <ul class="nav nav-underline nav-scroller navbar-nav ms-auto mb-3 mb-lg-0">
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+            <?php foreach ($pages as $page => $label): ?>
+              <li class="nav-item">
+                <a href="index.php?page=<?php echo $page; ?>" class="nav-link link-body-emphasis <?php echo ($current_page == $page) ? 'active' : ''; ?>" style="font-weight: normal !important;"><?php echo $label; ?></a>
+              </li>
+            <?php endforeach; ?>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+          </ul>
 
-        <ul class="nav nav-underline nav-scroller mb-3">
-          <?php foreach ($pages as $page => $label): ?>
-            <li class="nav-item">
-              <a href="index.php?page=<?php echo $page; ?>" class="nav-link link-body-emphasis <?php echo ($current_page == $page) ? 'active' : ''; ?>" style="font-weight: normal !important;"><?php echo $label; ?></a>
-            </li>
-          <?php endforeach; ?>
-        </ul>
-
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+
+  </div>
 </header>
 
 
+
 <body>
+
+  
+
   <!-- JS BOOSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
