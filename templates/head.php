@@ -12,7 +12,7 @@ $pages = array(
 );
 ?>
 
-<header class="head-container">
+<header class="head-container" style="background-color: rgba(255, 255, 255, 1);">
   <div class="container">
 
     <nav class="navbar navbar-expand-lg">

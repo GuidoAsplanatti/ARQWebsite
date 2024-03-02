@@ -25,8 +25,32 @@
 
 </head>
 
-<header class="head-container">
+<header class="head-container" style="background-color: rgba(255, 200, 200, 1);">
   <div class="container">
+      <div class="d-flex flex-wrap justify-content-center py-4">
+        <a href="index.php?page=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="contents/Logo_ARQFernandez.png" class="img-fluid" alt="ARQ Carlos Fernanez Cabrera">
+        </a>
+  
+        <ul class="nav nav-underline nav-scroller mb-3">
+          <?php foreach ($pages as $page => $label): ?>
+            <li class="nav-item <?php echo ($current_page == $page) ? 'active' : ''; ?>">
+              <a href="index.php?page=<?php echo $page; ?>" class="nav-link link-body-emphasis"><?php echo $label; ?></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+<body style="background-color: rgba(204, 204, 204, 0.5);">
+<div class="container">
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid py-4">
@@ -59,12 +83,6 @@
     </nav>
 
   </div>
-</header>
-
-
-
-<body>
-
   
 
   <!-- JS BOOSTRAP -->
