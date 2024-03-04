@@ -38,6 +38,10 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         case 'Casa_Herzog':
             include 'templates/workspages/Casa_Herzog.html';
             break;
+
+        //case 'Casa_Siguiente':
+            //include 'templates/workspages/Casa_Herzog.html';
+            //break;
         // Agregar más casos según las páginas que tengas
         default:
             include 'home.php'; // Página predeterminada
