@@ -14,6 +14,7 @@
 // Definir una variable para la página actual
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 ?>
+
 <body>
     <?php
     // Cargar el contenido de la página correspondiente
@@ -43,6 +44,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
             //include 'templates/workspages/Casa_Herzog.html';
             //break;
         // Agregar más casos según las páginas que tengas
+        
         default:
             include 'home.php'; // Página predeterminada
             break;
